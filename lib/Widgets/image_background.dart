@@ -7,10 +7,17 @@ class ImageBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Image(
-      height: double.infinity,
-      fit: BoxFit.fitHeight,
-      image: AssetImage('assets/numbers.jpg'),
+    return OrientationBuilder(
+      builder: (BuildContext context, Orientation orientation) {
+        return Image(
+          width: double.infinity,
+          height: double.infinity,
+          fit: orientation == Orientation.landscape
+              ? BoxFit.fill
+              : BoxFit.fitHeight,
+          image: const AssetImage('assets/numbers.jpg'),
+        );
+      },
     );
   }
 }
