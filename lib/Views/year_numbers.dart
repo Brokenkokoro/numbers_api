@@ -51,7 +51,7 @@ class ButtonAndContainer extends StatelessWidget {
             padding: const EdgeInsets.all(30),
             child: Text(history != null
                 ? 'The number $history'
-                : 'Escriba un numero de año y presione el boton'),
+                : 'Escriba un número de año y presione el botón'),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 6),
@@ -69,7 +69,7 @@ class ButtonAndContainer extends StatelessWidget {
                 if (value != null && value.length <= 4) {
                   return null;
                 }
-                return 'Ingrese un año valido';
+                return 'Ingrese un año válido';
               },
               inputFormatters: <TextInputFormatter>[
                 FilteringTextInputFormatter.digitsOnly

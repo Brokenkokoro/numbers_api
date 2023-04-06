@@ -51,7 +51,7 @@ class ButtonAndContainer extends StatelessWidget {
             padding: const EdgeInsets.all(30),
             child: Text(leyenda != null
                 ? 'The number $leyenda'
-                : 'Escriba un numero del 1 al 10 y presione el boton'),
+                : 'Escriba un número del 1 al 10 y presione el botón'),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 6),
@@ -61,15 +61,15 @@ class ButtonAndContainer extends StatelessWidget {
               obscureText: false,
               keyboardType: TextInputType.number,
               decoration: InputDecorations.authInputDecoration(
-                  hintText: 'Escriba un numero entre 1-10',
-                  labelText: 'Numero 1-10',
+                  hintText: 'Escriba un número entre 1-10',
+                  labelText: 'Número 1-10',
                   prefixIcon: Icons.numbers_rounded),
               onChanged: (value) => number = int.tryParse(value),
               validator: (value) {
                 if (value != null && value.length <= 2) {
                   return null;
                 }
-                return 'Ingrese un numero valido';
+                return 'Ingrese un número válido';
               },
               inputFormatters: <TextInputFormatter>[
                 FilteringTextInputFormatter.digitsOnly
@@ -95,7 +95,7 @@ class ButtonAndContainer extends StatelessWidget {
                 }
               },
               child: const Text(
-                'numero',
+                'número',
                 style: TextStyle(color: Colors.white, fontSize: 18),
               ),
             ),

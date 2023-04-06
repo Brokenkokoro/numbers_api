@@ -67,18 +67,18 @@ class ContainersList extends StatelessWidget {
             HomeContainer(
               title: "Numeros aleatorios",
               leyend:
-                  'Puede seleccionar esta opcion para ver la historia de numeros seleccionados al azar',
+                  'Puede seleccionar esta opción para ver la historia de numeros seleccionados al azar',
               navigation: 'random',
             ),
             HomeContainer(
                 title: 'Numeros del Año',
                 leyend:
-                    'En esta opcion puedes seleccionar un año y se te mostrara un evento importante a respectivo año',
+                    'En esta opción puedes seleccionar un año y se te mostrara un evento importante a respectivo año',
                 navigation: 'year'),
             HomeContainer(
                 title: 'Numeros del 1-10',
                 leyend:
-                    'En esta opcion podras inroducir un numero del 1 al 10, retornandote una breve leyenda',
+                    'En esta opción podras inroducir un número del 1 al 10, retornandote una breve leyenda',
                 navigation: 'number'),
           ],
         ),

@@ -49,7 +49,7 @@ class ButtonAndContainer extends StatelessWidget {
             padding: const EdgeInsets.all(30),
             child: Text(history != null
                 ? 'The number $history'
-                : 'Precione el boton para ver un numero aleatorio'),
+                : 'Presione el botón para ver un número aleatorio'),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 50),
