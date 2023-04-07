@@ -11,12 +11,12 @@ class YearNumber extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final nprovider = ref.watch(numbersProvider);
-    String? history = nprovider.history;
+    String? yearhistory = nprovider.yearhistory;
     return Scaffold(
       body: Stack(
         children: [
           const ImageBackground(),
-          ButtonAndContainer(history: history, nprovider: nprovider),
+          ButtonAndContainer(history: yearhistory, nprovider: nprovider),
         ],
       ),
     );

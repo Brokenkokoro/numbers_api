@@ -9,6 +9,7 @@ class NumbersProvider extends ChangeNotifier {
   String? history;
   Map numbers = {};
   String? leyenda;
+  String? yearhistory;
 
   NumbersProvider() {
     getNumbers();
@@ -32,7 +33,7 @@ class NumbersProvider extends ChangeNotifier {
     final response =
         await dio.get('http://numbersapi.com/${year.toString()}/year');
     //print(response);
-    history = response.toString();
+    yearhistory = response.toString();
     notifyListeners();
   }
 
